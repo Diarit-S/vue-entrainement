@@ -2,7 +2,7 @@
   <div id="app">
     <button class="btn btn-primary m-5" @click="display=!display">toggle</button>
     <div class="d-flex flex-column justify-content-center align-items-center">
-      <transition>
+      <transition enter-active-class="animated bounceIn">
         <div v-if="display" class="alert alert-danger w-50">C'est un alerte !</div>
       </transition>
     </div>
